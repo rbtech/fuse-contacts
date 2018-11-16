@@ -8,5 +8,11 @@
   ],
   "Includes": [
     "*"
-  ]
+  ],
+  "iOS" : {
+
+    "PList" : {
+      "NSContactsUsageDescription": "We need access to your contacts to find your friends"
+    }
+  }
 }

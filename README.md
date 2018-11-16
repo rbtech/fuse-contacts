@@ -1,25 +1,12 @@
-Fuse Contacts bindings [![Build Status](https://travis-ci.org/bolav/fuse-contacts.svg?branch=master)](https://travis-ci.org/bolav/fuse-contacts) ![Fuse Version](http://fuse-version.herokuapp.com/?repo=https://github.com/bolav/fuse-contacts)
-======================
+Fuse Contacts
+=============
 
-Library to use contacts in [Fuse](http://www.fusetools.com/).
-
-https://www.fusetools.com/community/forums/feature_requests/contacts_api
+Library to use contacts in [Fuse-Open](http://www.fuse-open.com).
 
 Issues, feature request and pull request are welcomed.
 
-## Installation
-
-Using [fusepm](https://github.com/bolav/fusepm)
-
-    $ fusepm install https://github.com/bolav/fuse-contacts
-
 
 ## Usage:
-
-### UX
-
-`<Contacts ux:Global="Contacts" />`
-
 
 ### JS
 
@@ -39,7 +26,7 @@ API
 ### require
 
 ```
-var contacts = require('Contacts');
+var contacts = require('FuseJS/Contacts');
 ```
 
 ### authorize

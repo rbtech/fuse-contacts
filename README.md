@@ -1,7 +1,7 @@
 Fuse Contacts
 =============
 
-Library to use contacts in [Fuse-Open](http://www.fuse-open.com).
+Library to use Contacts in [Fuse-Open](http://www.fuse-open.com).
 
 Issues, feature request and pull request are welcomed.
 
@@ -11,10 +11,11 @@ Issues, feature request and pull request are welcomed.
 ### JS
 
 ```
-contacts.authorize().then(function (status) {
+var Contacts = require('FuseJS/Contacts');
+Contacts.authorize().then(function (status) {
 	console.log(status);
 	if (status === 'AuthorizationAuthorized') {
-		console.log(JSON.stringify(contacts.getAll()));
+		console.log(JSON.stringify(Contacts.getAll()));
 	}
 })
 
@@ -26,7 +27,7 @@ API
 ### require
 
 ```
-var contacts = require('FuseJS/Contacts');
+var Contacts = require('FuseJS/Contacts');
 ```
 
 ### authorize
@@ -34,7 +35,7 @@ var contacts = require('FuseJS/Contacts');
 Returns a promise with the status of authorization
 
 ```
-var auth = contacts.authorize();
+var auth = Contacts.authorize();
 auth.then(function (status) {
 	console.log(status);
 })
@@ -53,7 +54,7 @@ status can be:
 Returns an array of hashes of contacts
 
 ```
-console.log(JSON.stringify(contacts.getAll()));
+console.log(JSON.stringify(Contacts.getAll()));
 ```
 
 ### getPage

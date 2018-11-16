@@ -4,7 +4,7 @@ using Uno.Threading;
 using Fuse;
 using Fuse.Scripting;
 using Fuse.Reactive;
-using Bolav.ForeignHelpers;
+using Fuse.Contacts.Helpers;
 
 [UXGlobalModule]
 public class Contacts : NativeModule {
@@ -15,7 +15,7 @@ public class Contacts : NativeModule {
 	{
 		if (_instance != null) return;
 		_instance = this;
-		Resource.SetGlobalKey(_instance, "Contacts");
+		Uno.UX.Resource.SetGlobalKey(_instance = this, "FuseJS/Contacts");
 		
 		AddMember(new NativePromise<string, string>("authorize", Authorize, null));
 		AddMember(new NativeFunction("getAll", (NativeCallback)GetAll));

@@ -4,15 +4,9 @@
   "Packages": [
     "Fuse",
     "FuseJS",
-    "Android",
     "Uno.Permissions"
   ],
   "Includes": [
     "*"
-  ],
-  "FusePM": {
-    "Dependencies": [
-      "https://github.com/bolav/fuse-foreignhelpers"
-    ]
-  }
+  ]
 }

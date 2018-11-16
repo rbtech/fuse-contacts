@@ -1,7 +1,7 @@
 using Uno;
 using Uno.Collections;
 using Fuse;
-using Bolav.ForeignHelpers;
+using Fuse.Contacts.Helpers;
 using Uno.Threading;
 using Uno.Compiler.ExportTargetInterop;
 using Uno.Permissions;

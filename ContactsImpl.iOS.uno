@@ -1,8 +1,8 @@
 using Uno;
 using Fuse;
-using Bolav.ForeignHelpers;
 using Uno.Compiler.ExportTargetInterop;
 using Uno.Threading;
+using Fuse.Contacts.Helpers;
 
 [Require("Source.Import","AddressBook/AddressBook.h")]
 [Require("Source.Include", "@{ForeignDict:Include}")]

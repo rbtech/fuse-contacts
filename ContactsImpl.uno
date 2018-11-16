@@ -1,8 +1,8 @@
 using Uno;
 using Uno.Collections;
 using Fuse;
-using Bolav.ForeignHelpers;
 using Uno.Threading;
+using Fuse.Contacts.Helpers;
 
 public extern(!Mobile) class ContactsImpl
 {

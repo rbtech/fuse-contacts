@@ -1,15 +1,15 @@
 <App>
-	<Contacts ux:Global="Contacts" />
 	<JavaScript>
-		var contacts = require('Contacts');
-		var auth = contacts.authorize();
+		var Contacts = require('FuseJS/Contacts');
+		var auth = Contacts.authorize();
 		console.log(auth);
 		auth.then(function (status) {
 			console.log(status);
 			if (status === 'AuthorizationAuthorized') {
-				console.log(JSON.stringify(contacts.getAll()));
+				console.log(JSON.stringify(Contacts.getPage(10,1)));
+				// console.log(JSON.stringify(Contacts.getAll()));
 			}
-		})
+		});
 	</JavaScript>
 </App>
 
